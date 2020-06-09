@@ -1,6 +1,6 @@
 export const defaults = {
   //typeDefs
-  isLoggedIn: localStorage.getItem("token") !== null ? true : false
+  isLoggedIn: Boolean(localStorage.getItem("token")) || false
 };
 
 export const resolvers = {
